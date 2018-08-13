@@ -1,0 +1,15 @@
+
+
+footer{
+    background-color: #353a3f;
+    color: wheat;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    padding: 20px;
+}
+.cambio{
+    background-color:#2A1548;
+}
+
