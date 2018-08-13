@@ -5,6 +5,7 @@ const app = express();
 
 const hbs = require('hbs');
 
+const port = process.env.PORT || 3000;
 
 // comandos para mostrar los servicios de la pagina web que se encuentran en la carpeta de PUBLIC
 app.use(express.static(__dirname + '/public'));
@@ -38,8 +39,8 @@ app.get('/about', (req, res)=>{
     });
  });
 
-app.listen(3000, (req, res)=>{
-    console.log('api-rest corriendo en http://192.168.1.7:3000')
+app.listen(port, (req, res)=>{
+    console.log(`api-rest corriendo en http://192.168.1.7:${port}`)
 });
 
 
